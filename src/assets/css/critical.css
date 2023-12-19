@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #hero {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Geist", "Arial", sans-serif;
     /* Centers button */
     text-align: center;
     /* changes on tablet */
@@ -218,17 +218,25 @@
     position: relative;
     z-index: 100;
   }
-  .services .card {
+  .services h2 {
+    text-align: center;
+    margin: 0 auto 2rem;
+  }
+  .services-button {
+    text-align: center;
+    margin: 2em 0em 0em 0em;
+  }
+  .services .services-cards .card {
     width: 100%;
     max-width: 22.3125em;
     margin: auto;
     margin-bottom: 3.125em;
     display: block;
   }
-  .services .card:last-of-type {
+  .services .services-cards .card:last-of-type {
     margin-bottom: 0;
   }
-  .services .card picture {
+  .services .services-cards .card picture {
     width: 5.5em;
     height: 5.5em;
     margin: auto;
@@ -239,11 +247,11 @@
     justify-content: center;
     align-items: center;
   }
-  .services .card picture img {
+  .services .services-cards .card picture img {
     width: 3em;
     height: 3em;
   }
-  .services .card h2 {
+  .services .services-cards .card h2 {
     font-size: 2em;
     font-weight: 700;
     line-height: 1.35em;
@@ -251,11 +259,39 @@
     margin-bottom: 0.65em;
     color: #1a1a1a;
   }
-  .services .card p {
+  .services .services-cards .card p {
     line-height: 1.3333333333em;
     text-align: center;
     width: 100%;
     opacity: 0.7;
+  }
+  .services .services-cards .card .cs-ul {
+    max-width: 39.375rem;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    /* clips the bullets to create the half circle */
+    overflow: hidden;
+  }
+  .services .services-cards .card .cs-ul .cs-li {
+      list-style: none;
+      margin: 0 0 0.5rem 0;
+      color: var(--bodyTextColor);
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.75rem;
+      position: relative;
+  }
+  .services .services-cards .card .cs-ul .cs-li:before {
+      /* bullet */
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-top: 0.5rem;
+      background: var(--secondary);
+      display: block;
+      /* prevents flexbox from squishing it */
+      flex: none;
   }
 }
 /* Inbetween */
@@ -263,13 +299,15 @@
   .services {
     font-size: min(1.8vw, 1em);
     width: 98%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
   }
-  .services .card {
+  .services .services-cards .card {
     max-width: 20.3125em;
     margin: 0;
+  }
+  .services-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 }
 /* Large Desktop */
@@ -277,7 +315,7 @@
   .services {
     padding: 3.125em 5em;
   }
-  .services .card {
+  .services .services-cards .card {
     max-width: 22.3125em;
   }
 }
@@ -286,12 +324,18 @@
   body.dark-mode #services {
     background: var(--medium);
   }
-  body.dark-mode #services picture {
+  body.dark-mode #services .services-cards picture {
     background: var(--primaryDark);
   }
   body.dark-mode #services h2 {
     font-weight: bold;
     color: #fff;
+  }
+  body.dark-mode .services .services-cards .card .cs-ul .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode .services .services-cards .card .cs-ul .cs-li {
+    opacity: 0.8;
   }
 }
 

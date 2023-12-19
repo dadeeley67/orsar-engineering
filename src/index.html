@@ -76,45 +76,46 @@ eleventyNavigation:
 
     <section id="services" class="services">
         <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+        <h2>Our Services</h2>
+        <div class="services-cards">
+            <div class="card">
+                <picture>
+                    <img
+                    aria-hidden="true"
+                    decoding="async"
+                    src="/assets/svgs/service1.svg"
+                    alt="appliance"
+                    width="48"
+                    height="48" />
+                </picture>
+                <ul class="cs-ul">
+                    <li class="cs-li">Heating, Ventilation, and Air Conditioning (HVAC) system design</li>
+                    <li class="cs-li">Electrical system design and analysis</li>
+                    <li class="cs-li">Plumbing and fire protection system design</li>
+                </ul>
+            </div>
+            <div class="card">
+                <picture>
+                    <img
+                    aria-hidden="true"
+                    decoding="async"
+                    src="/assets/svgs/service3.svg"
+                    alt="appliance"
+                    width="48"
+                    height="48" />
+                </picture>
+                <ul class="cs-ul">
+                    <li class="cs-li">NYC MEP Special and progress inspections</li>
+                    <li class="cs-li">Commissioning and retro-commissioning</li>
+                    <li class="cs-li">Local law compliance</li>
+                    <li class="cs-li">Energy analysis</li>
+                </ul>
+            </div>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+        <div class="services-button">
+            <a href="/services" class="cs-button-solid">Learn More</a>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
+        
     </section>
 
     <!-- ============================================ -->
@@ -276,16 +277,16 @@ eleventyNavigation:
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    <!-- <section id="reviews">
         <div class="cs-container">
             <span class="cs-topper">Our Reviews</span>
             <h2 class="cs-title">Words From Our Customers</h2>
             <p class="cs-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
             </p>
-            <ul class="cs-card-group">
+            <ul class="cs-card-group"> -->
                 <!-- Review 1 -->
-                <li class="cs-item">
+                <!-- <li class="cs-item">
                     <img
                     class="cs-item-img"
                     aria-hidden="true"
@@ -311,9 +312,9 @@ eleventyNavigation:
                     alt="stars"
                     width="96"
                     height="16" />
-                </li>
+                </li> -->
                 <!-- Review 2 -->
-                <li class="cs-item">
+                <!-- <li class="cs-item">
                     <img
                     class="cs-item-img"
                     aria-hidden="true"
@@ -343,7 +344,7 @@ eleventyNavigation:
             </ul>
             <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
         </div>
-    </section>
+    </section> -->
 
     {% include 'components/cta.html' %}
 {% endblock %}
