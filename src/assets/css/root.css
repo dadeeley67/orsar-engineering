@@ -108,7 +108,6 @@
     font-display: swap;
     src: local(""), url("/assets/fonts/Geist-Black.woff2") format("woff2"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
   body,
   html {
     font-family: "Geist", Arial, sans-serif;
