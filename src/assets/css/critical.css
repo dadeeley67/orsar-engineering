@@ -114,20 +114,7 @@
     padding: clamp(9em, 25.95vw, 17.5em) 0;
     position: relative;
   }
-  #hero .cs-container:before {
-    /* Left Line */
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #hero .cs-flex-group {
+  #hero .cs-container .cs-flex-group {
     width: 80vw;
     /* 464px - 562px */
     max-width: clamp(29em, 60vw, 35.125em);
@@ -140,17 +127,17 @@
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  #hero .cs-topper {
+  #hero .cs-container .cs-topper {
     text-align: center;
     margin-bottom: 1rem;
     color: var(--primary);
   }
-  #hero .cs-title {
+  #hero .cs-container .cs-title {
     text-align: center;
     width: 100%;
     color: var(--bodyTextColorWhite);
   }
-  #hero .cs-text {
+  #hero .cs-container .cs-text {
     text-align: center;
     /* 32px - 40px */
     margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
@@ -158,12 +145,12 @@
     margin-bottom: clamp(2.5rem, 4vw, 3rem);
     color: var(--bodyTextColorWhite);
   }
-  #hero .cs-button-solid {
+  #hero .cs-container .cs-button-solid {
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     height: initial;
     margin-bottom: 1rem;
   }
-  #hero .cs-button-transparent {
+  #hero .cs-container .cs-button-transparent {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -183,8 +170,9 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
   }
-  #hero .cs-button-transparent:before {
+  #hero .cs-container .cs-button-transparent:before {
     content: "";
     background: #000;
     opacity: 1;
@@ -200,17 +188,27 @@
     transform: scaleX(0);
     transition: transform 0.3s;
     transform-origin: left;
+    border-radius: 5px;
   }
-  #hero .cs-button-transparent:hover:before {
+  #hero .cs-container .cs-button-transparent:hover:before {
     transform: scaleX(1);
   }
-  #hero .cs-button-transparent .cs-img {
+  #hero .cs-container .cs-button-transparent .cs-img {
     margin-right: 0.75rem;
     display: block;
   }
+  /* Tablet - 768px */
+  /* Desktop Parallax Effect - 1300px */
+  /* Dark Mode */
+  /*-- -------------------------- -->
+  <---          Services          -->
+  <--- -------------------------- -*/
+  /* Mobile */
+  /* Inbetween */
+  /* Large Desktop */
+  /* Dark mode */
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 0em) and (min-width: 48em) {
   #hero {
     /* 32px - 40px */
     padding: 0 clamp(2em, 5vw, 2.5em);
@@ -218,26 +216,12 @@
   #hero .cs-container {
     padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
   }
-  #hero .cs-container:after {
-    /* Right Line */
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
   #hero .cs-button-solid {
     margin-right: 1.25rem;
     margin-bottom: 0;
   }
 }
-/* Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25em) {
+@media only screen and (min-width: 0em) and (min-width: 81.25em) {
   #hero {
     background: url("/assets/images/landing.jpg");
     background-position: center;
@@ -247,17 +231,15 @@
     background-attachment: fixed;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0em) and (min-width: 0em) {
   body.dark-mode #hero .cs-background:before {
     opacity: 0.8;
   }
+  body.dark-mode #hero .cs-topper {
+    color: var(--accent);
+  }
 }
-/*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0em) and (min-width: 0em) {
   .services {
     width: 90%;
     max-width: 82.5em;
@@ -265,7 +247,7 @@
     margin-top: -10.4375em;
     margin-bottom: 3.125em;
     padding: 3.125em 1.25em;
-    background: #fff;
+    background: var(--bodyBackgroundLight);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
     border-top: 0.375em solid var(--primary);
     border-radius: 0.3125em;
@@ -348,8 +330,7 @@
     margin: 2em 0em 0em 0em;
   }
 }
-/* Inbetween */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 0em) and (min-width: 768px) {
   .services {
     font-size: min(1.8vw, 1em);
     width: 98%;
@@ -364,8 +345,7 @@
     margin: 0;
   }
 }
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 0em) and (min-width: 1300px) {
   .services {
     padding: 3.125em 5em;
   }
@@ -387,8 +367,7 @@
     animation: fade-in .5s ease-in;
   }
 }
-/* Dark mode */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0em) and (min-width: 0em) {
   body.dark-mode #services {
     background: var(--medium);
   }
@@ -399,8 +378,14 @@
     font-weight: bold;
     color: #fff;
   }
+  body.dark-mode .services {
+    border-top: 0.375em solid var(--accent);
+  }
   body.dark-mode .services .services-cards .cs-ul .cs-li {
     color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode .services .services-cards .cs-ul .cs-li:before {
+    background-color: var(--accent);
   }
   body.dark-mode .services .services-cards .cs-ul .cs-li {
     opacity: 0.8;
