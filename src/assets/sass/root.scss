@@ -875,6 +875,10 @@
             align-items: center;
             /* 20px - 36px */
             gap: clamp(1.25rem, 2.6vw, 2.25rem);
+
+            #contact {
+                display: none;
+            }
         }
 
         .cs-li {
