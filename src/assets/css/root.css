@@ -59,13 +59,17 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
-    --secondary: #426770;
-    --secondaryLight: #001f3f;
+    --primary: #86a59c;
+    --primaryLight: #86a68d;
+    --secondary: #a3c4aa;
+    --secondaryLight: #8ca992;
     --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
+    --bodyTextColor: #000000;
     --bodyTextColorWhite: #fafbfc;
+    --bodyBackground: #b2646c;
+    --bodyBackgroundLight: #d2757e;
+    --footer: #95595f;
+    --navigation: #b2646c;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -108,6 +112,7 @@
     width: auto;
     height: 3.125rem;
     padding: 0 1.875rem;
+    border-radius: 5px;
     color: #000;
     background-color: var(--primary);
     display: inline-block;
@@ -134,6 +139,7 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+    border-radius: 5px;
   }
 }
 /* Fonts and general styles */
@@ -170,6 +176,7 @@
     padding: 0;
     color: var(--bodyTextColor);
     overflow-x: hidden;
+    background-color: var(--bodyBackground);
   }
   *,
   *:before,
@@ -309,7 +316,7 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem 1rem;
-    background-color: #fff;
+    background-color: var(--navigation);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
@@ -435,7 +442,7 @@
   }
   #cs-navigation .cs-ul-wrapper {
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--navigation);
     box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
     opacity: 0;
     position: absolute;
@@ -744,7 +751,7 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0 1rem;
-    background-color: #fff;
+    background-color: var(--navigation);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
@@ -936,6 +943,7 @@
   #cta {
     padding: 3.125rem 0;
     position: relative;
+    z-index: 1;
   }
   #cta:before {
     content: "";
@@ -1068,7 +1076,7 @@
   #footer {
     font-size: min(4vw, 1.2em);
     padding: 5.25rem 0 1.25rem;
-    background: #1c1c1c;
+    background: var(--footer);
   }
   #footer .left-section {
     text-align: center;

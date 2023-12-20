@@ -11,13 +11,17 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary: #ffba19;
-        --primaryLight: #ffd675;
-        --secondary: #426770;
-        --secondaryLight: #001f3f;
+        --primary: #86a59c;
+        --primaryLight: #86a68d;
+        --secondary: #a3c4aa;
+        --secondaryLight: #8ca992;
         --headerColor: #1a1a1a;
-        --bodyTextColor: #4e4b66;
+        --bodyTextColor: #000000;
         --bodyTextColorWhite: #fafbfc;
+        --bodyBackground: #b2646c;
+        --bodyBackgroundLight: #d2757e;
+        --footer: #95595f;
+        --navigation: #b2646c;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -68,6 +72,7 @@
         width: auto;
         height: calc(50 / 16 * 1rem);
         padding: 0 calc(30 / 16 * 1rem);
+        border-radius: 5px;
 
         // Transition Properties
         color: #000;
@@ -99,6 +104,7 @@
             left: 0;
             z-index: -1;
             transition: width 0.3s;
+            border-radius: 5px;
         }
     }
 }
@@ -140,6 +146,7 @@
         padding: 0;
         color: var(--bodyTextColor);
         overflow-x: hidden;
+        background-color: var(--bodyBackground);
     }
 
     *,
@@ -315,7 +322,7 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
-        background-color: #fff;
+        background-color: var(--navigation);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;
         z-index: 10000;
@@ -461,7 +468,7 @@
 
         .cs-ul-wrapper {
             height: 100vh;
-            background-color: #fff;
+            background-color: var(--navigation);
             box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
             opacity: 0;
             position: absolute;
@@ -830,7 +837,7 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: 0 calc(16 / 16 * 1rem);
-        background-color: #fff;
+        background-color: var(--navigation);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;
         z-index: 10000;
@@ -1056,6 +1063,7 @@
     #cta {
         padding: calc(50 / 16 * 1rem) 0;
         position: relative;
+        z-index: 1;
 
         &:before {
             content: "";
@@ -1202,7 +1210,7 @@
     #footer {
         font-size: min(4vw, 1.2em);
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
-        background: #1c1c1c;
+        background: var(--footer);
 
         .left-section {
             text-align: center;

@@ -183,6 +183,7 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
   }
   #hero .cs-button-transparent:before {
     content: "";
@@ -200,6 +201,7 @@
     transform: scaleX(0);
     transition: transform 0.3s;
     transform-origin: left;
+    border-radius: 5px;
   }
   #hero .cs-button-transparent:hover:before {
     transform: scaleX(1);
@@ -265,7 +267,7 @@
     margin-top: -10.4375em;
     margin-bottom: 3.125em;
     padding: 3.125em 1.25em;
-    background: #fff;
+    background: var(--bodyBackgroundLight);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
     border-top: 0.375em solid var(--primary);
     border-radius: 0.3125em;
