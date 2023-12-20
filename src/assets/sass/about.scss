@@ -35,6 +35,7 @@
             position: absolute;
             /* clips img tag corners */
             overflow: hidden;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -164,6 +165,7 @@
     body.dark-mode {
         #sbs {
             .cs-left {
+
                 &:before,
                 &:after {
                     background: var(--accent);
@@ -177,7 +179,7 @@
             }
 
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--accent);
             }
 
             .cs-title,

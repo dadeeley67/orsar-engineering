@@ -11,26 +11,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
-
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
 {% endblock %}
 
 {% block body %}
@@ -56,7 +38,7 @@ eleventyNavigation:
                     src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
                     alt="play icon"
                     width="17"
-                    height="17" />
+                    height="17"/>
                     Get in Touch
                 </a>
             </div>
@@ -86,7 +68,7 @@ eleventyNavigation:
                     src="/assets/svgs/service1.svg"
                     alt="appliance"
                     width="48"
-                    height="48" />
+                    height="48"/>
                 </picture>
                 <ul class="cs-ul">
                     <li class="cs-li">Heating, Ventilation, and Air Conditioning (HVAC) system design</li>
@@ -102,7 +84,7 @@ eleventyNavigation:
                     src="/assets/svgs/service3.svg"
                     alt="appliance"
                     width="48"
-                    height="48" />
+                    height="48"/>
                 </picture>
                 <ul class="cs-ul">
                     <li class="cs-li">NYC MEP Special and progress inspections</li>
@@ -115,7 +97,7 @@ eleventyNavigation:
         <!-- <div class="services-button">
             <a href="/services" class="cs-button-solid">See our Services</a>
         </div> -->
-        
+
     </section>
 
     <!-- ============================================ -->
@@ -169,40 +151,6 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <!-- <section id="sbs-r">
-        <div class="cs-container"> -->
-            <!-- Left Image Section -->
-            <!-- <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div> -->
-            <!-- Right Content Section-->
-            <!-- <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
@@ -251,8 +199,8 @@ eleventyNavigation:
                 </div>
                 <!-- Row 3 -->
                 <!-- <div class="cs-row cs-row-3"> -->
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <!-- <picture class="cs-picture cs-picture1">
+                <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                <!-- <picture class="cs-picture cs-picture1">
                         <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
                         <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
@@ -285,8 +233,8 @@ eleventyNavigation:
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
             </p>
             <ul class="cs-card-group"> -->
-                <!-- Review 1 -->
-                <!-- <li class="cs-item">
+    <!-- Review 1 -->
+    <!-- <li class="cs-item">
                     <img
                     class="cs-item-img"
                     aria-hidden="true"
@@ -313,8 +261,8 @@ eleventyNavigation:
                     width="96"
                     height="16" />
                 </li> -->
-                <!-- Review 2 -->
-                <!-- <li class="cs-item">
+    <!-- Review 2 -->
+    <!-- <li class="cs-item">
                     <img
                     class="cs-item-img"
                     aria-hidden="true"
