@@ -1,4 +1,58 @@
 /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+/* Import animations */
+/*-- -------------------------- -->
+<---        Animations          -->
+<--- -------------------------- -*/
+@-webkit-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-ms-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -132,6 +186,20 @@
   }
   #sbs .cs-right {
     margin: 0;
+  }
+  #sbs.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  #sbs.reveal.active {
+    opacity: 1;
+  }
+  #sbs.active.fade-in {
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    -ms-animation: fade-in .5s ease-in;
+    -o-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
   }
 }
 /* Dark Mode */
@@ -423,6 +491,20 @@
   #gallery .cs-row-3 .cs-picture3 {
     width: 26.25em;
     height: 39.3125em;
+  }
+  #gallery.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  #gallery.reveal.active {
+    opacity: 1;
+  }
+  #gallery.active.fade-in {
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    -ms-animation: fade-in .5s ease-in;
+    -o-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
   }
 }
 /* Dark mode */

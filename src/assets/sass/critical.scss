@@ -1,5 +1,8 @@
 /* STYLES FOR ABOVE THE FOLD */
 
+/* Import animations */
+@import "animations.scss";
+
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -376,6 +379,17 @@
         .card {
             max-width: calc(357 / 16 * 1em);
         }
+    }
+
+    #services.reveal {
+        position: relative;
+        opacity: 0;
+    }
+    #services.reveal.active {
+        opacity: 1;
+    }
+    #services.active.fade-in {
+        @include animation('fade-in .5s ease-in');
     }
 }
 

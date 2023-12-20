@@ -1,5 +1,8 @@
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 
+/* Import animations */
+@import "animations.scss";
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -1109,6 +1112,17 @@
             opacity: 1;
         }
     }
+
+    #cta.reveal {
+        position: relative;
+        opacity: 0;
+    }
+    #cta.reveal.active {
+        opacity: 1;
+    }
+    #cta.active.fade-in {
+        @include animation('fade-in .5s ease-in');
+    }
 }
 
 /* Small Desktop */
@@ -1329,6 +1343,17 @@
                 display: block;
             }
         }
+    }
+
+    #footer.reveal {
+        position: relative;
+        opacity: 0;
+    }
+    #footer.reveal.active {
+        opacity: 1;
+    }
+    #footer.active.fade-in {
+        @include animation('fade-in .5s ease-in');
     }
 }
 

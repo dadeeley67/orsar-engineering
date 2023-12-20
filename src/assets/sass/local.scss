@@ -1,5 +1,8 @@
 /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
 
+/* Import animations */
+@import "animations.scss";
+
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -156,6 +159,18 @@
             margin: 0;
         }
     }
+
+    #sbs.reveal {
+        position: relative;
+        opacity: 0;
+    }
+    #sbs.reveal.active {
+        opacity: 1;
+    }
+    #sbs.active.fade-in {
+        @include animation('fade-in .5s ease-in');
+    }
+
 }
 
 /* Dark Mode */
@@ -517,6 +532,16 @@
                 height: calc(629 / 16 * 1em);
             }
         }
+    }
+    #gallery.reveal {
+        position: relative;
+        opacity: 0;
+    }
+    #gallery.reveal.active {
+        opacity: 1;
+    }
+    #gallery.active.fade-in {
+        @include animation('fade-in .5s ease-in');
     }
 }
 

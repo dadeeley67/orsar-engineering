@@ -1,4 +1,58 @@
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
+/* Import animations */
+/*-- -------------------------- -->
+<---        Animations          -->
+<--- -------------------------- -*/
+@-webkit-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-ms-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -932,6 +986,20 @@
     color: #fff;
     opacity: 1;
   }
+  #cta.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  #cta.reveal.active {
+    opacity: 1;
+  }
+  #cta.active.fade-in {
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    -ms-animation: fade-in .5s ease-in;
+    -o-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
+  }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
@@ -1126,6 +1194,20 @@
   #footer .credit .copyright {
     font-size: 1rem;
     display: block;
+  }
+  #footer.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  #footer.reveal.active {
+    opacity: 1;
+  }
+  #footer.active.fade-in {
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    -ms-animation: fade-in .5s ease-in;
+    -o-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
   }
 }
 /* Small Desktop */

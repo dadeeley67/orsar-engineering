@@ -1,7 +1,7 @@
 ---
 title: 'ORSAR Engineering'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
+preloadImg: '/assets/images/nyc.jpg'
 permalink: '/'
 eleventyNavigation:
   key: Home
@@ -13,6 +13,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
     <link rel="stylesheet" href="/assets/css/critical.css" />
+    <link rel="stylesheet" href="/assets/css/animista.css" />
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -74,7 +75,7 @@ eleventyNavigation:
     <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="services" class="services">
+    <section id="services" class="services reveal fade-in">
         <!-- Get Icons From flaticon.com -->
         <h2>Our Services</h2>
         <div class="services-cards">
@@ -122,7 +123,7 @@ eleventyNavigation:
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="sbs" class="reveal fade-in">
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
@@ -206,7 +207,7 @@ eleventyNavigation:
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    <section id="gallery" class="reveal fade-in">
         <div class="cs-container">
             <span class="cs-topper">Our Portfolio</span>
             <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>

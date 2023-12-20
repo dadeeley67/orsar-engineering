@@ -1,4 +1,58 @@
 /* STYLES FOR ABOVE THE FOLD */
+/* Import animations */
+/*-- -------------------------- -->
+<---        Animations          -->
+<--- -------------------------- -*/
+@-webkit-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-ms-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -317,6 +371,20 @@
   }
   .services .card {
     max-width: 22.3125em;
+  }
+  #services.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  #services.reveal.active {
+    opacity: 1;
+  }
+  #services.active.fade-in {
+    -webkit-animation: fade-in .5s ease-in;
+    -moz-animation: fade-in .5s ease-in;
+    -ms-animation: fade-in .5s ease-in;
+    -o-animation: fade-in .5s ease-in;
+    animation: fade-in .5s ease-in;
   }
 }
 /* Dark mode */
