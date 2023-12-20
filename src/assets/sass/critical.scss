@@ -203,9 +203,9 @@
                     }
                 }
 
-                .cs-topper {
-                    color: var(--accent);
-                }
+                // .cs-topper {
+                //     color: var(--accent);
+                // }
             }
         }
     }
@@ -386,9 +386,9 @@
                         .cs-li {
                             color: var(--bodyTextColorWhite);
 
-                            &:before {
-                                background-color: var(--accent);
-                            }
+                            // &:before {
+                            //     background-color: var(--accent);
+                            // }
 
                         }
 
@@ -398,7 +398,7 @@
                     }
                 }
 
-                border-top: 0.375em solid var(--accent);
+                // border-top: 0.375em solid var(--accent);
             }
         }
     }

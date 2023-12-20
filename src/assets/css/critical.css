@@ -235,9 +235,6 @@
   body.dark-mode #hero .cs-background:before {
     opacity: 0.8;
   }
-  body.dark-mode #hero .cs-topper {
-    color: var(--accent);
-  }
 }
 @media only screen and (min-width: 0em) and (min-width: 0em) {
   .services {
@@ -378,14 +375,8 @@
     font-weight: bold;
     color: #fff;
   }
-  body.dark-mode .services {
-    border-top: 0.375em solid var(--accent);
-  }
   body.dark-mode .services .services-cards .cs-ul .cs-li {
     color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode .services .services-cards .cs-ul .cs-li:before {
-    background-color: var(--accent);
   }
   body.dark-mode .services .services-cards .cs-ul .cs-li {
     opacity: 0.8;
