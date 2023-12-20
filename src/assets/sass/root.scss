@@ -12,8 +12,8 @@
 
     // Website colors
     :root {
-        --primary: #008170;
-        --primaryLight: #86a68d;
+        --primary: #ffba19;
+        --primaryLight: #ffd675;
         --secondary: #426770;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -983,11 +983,11 @@
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-li-link {
-                &:before {
-                    background-color: var(--accent);
-                }
-            }
+            // .cs-li-link {
+            //     &:before {
+            //         background-color: var(--accent);
+            //     }
+            // }
         }
     }
 }
@@ -1504,36 +1504,36 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        .cs-button-solid {
-            background-color: var(--accent);
-        }
+        // .cs-button-solid {
+        //     background-color: var(--accent);
+        // }
 
-        .cs-topper {
-            color: var(--accent);
-        }
+        // .cs-topper {
+        //     color: var(--accent);
+        // }
 
         #footer {
             background: #061623;
 
-            .right-section {
-                .lists {
-                    ul {
-                        li {
-                            h2 {
-                                &:before {
-                                    background: var(--accent);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            // .right-section {
+            //     .lists {
+            //         ul {
+            //             li {
+            //                 h2 {
+            //                     &:before {
+            //                         background: var(--accent);
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
 
-            .credit {
-                a {
-                    color: var(--accent);
-                }
-            }
+            // .credit {
+            //     a {
+            //         color: var(--accent);
+            //     }
+            // }
         }
     }
 }

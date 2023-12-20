@@ -59,8 +59,8 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #008170;
-    --primaryLight: #86a68d;
+    --primary: #ffba19;
+    --primaryLight: #ffd675;
     --secondary: #426770;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
@@ -850,9 +850,6 @@
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--accent);
-  }
 }
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -1275,20 +1272,8 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode .cs-button-solid {
-    background-color: var(--accent);
-  }
-  body.dark-mode .cs-topper {
-    color: var(--accent);
-  }
   body.dark-mode #footer {
     background: #061623;
-  }
-  body.dark-mode #footer .right-section .lists ul li h2:before {
-    background: var(--accent);
-  }
-  body.dark-mode #footer .credit a {
-    color: var(--accent);
   }
 }
 
