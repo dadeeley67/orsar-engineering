@@ -12,17 +12,17 @@
 
     // Website colors
     :root {
-        --primary: #86a59c;
+        --primary: #008170;
         --primaryLight: #86a68d;
-        --secondary: #a3c4aa;
-        --secondaryLight: #8ca992;
+        --secondary: #426770;
+        --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
-        --bodyTextColor: #000000;
+        --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
-        --bodyBackground: #b2646c;
-        --bodyBackgroundLight: #d2757e;
-        --footer: #95595f;
-        --navigation: #b2646c;
+        --bodyBackground: #ffffff;
+        --bodyBackgroundLight: #ffffff;
+        --footer: #1c1c1c;
+        --navigation: #ffffff;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
