@@ -30,72 +30,235 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--                   Gallery                    -->
+    <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    <section class="sbs">
         <div class="cs-container">
+            <!-- Left Image Section -->
             <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
+                <!--Image-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/portfolio/portfolio-3.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/portfolio/portfolio-3.jpeg">
+                    <img loading="lazy" decoding="async" src="/assets/images/portfolio/portfolio-3.jpeg" alt="meeting" width="630" height="630" aria-hidden="true">
+                </picture>
             </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                {# <span class="cs-topper">About Us</span> #}
+                <h2 class="cs-title">Project #1</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra vehicula dui sit amet tincidunt. Suspendisse eget iaculis nunc, et ornare elit. Aenean varius, massa sit amet viverra finibus, purus libero pretium enim, non suscipit dui felis ullamcorper dui. Duis mattis mattis dapibus. Proin eu enim risus. Curabitur porta vel arcu non aliquet. Praesent dapibus, dolor vel varius gravida, risus tellus dictum ligula, at sollicitudin nisl ex eu elit. Morbi ligula justo, blandit sit amet varius ut, mattis ac ligula.
+                </p>
+                <h3 class="cs-h3">Services Rendered</h3>
+                <div class="icon-container">
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/006-plumbing.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">Plumbing</p>
+                    </div>
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/005-electric-panel.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">Electrical</p>
+                    </div>
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/004-air-conditioner.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">HVAC</p>
+                    </div>
+                </div>
+
+                {# <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a> #}
+                {# <ul class="cs-ul">
+                    <li class="cs-item">
+                        <span class="cs-number">150 +</span>
+                        <h3 class="cs-h3">Staff on three continents</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">700 +</span>
+                        <h3 class="cs-h3">Consulting engagements</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">180 +</span>
+                        <h3 class="cs-h3">Learning community members</h3>
+                    </li>
+                </ul> #}
+            </div>
+        </div>
+    </section>
+
+    <section class="sbs">
+        <div class="cs-container reversed reveal fade-in">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <!--Image-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/portfolio/portfolio-5.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/portfolio/portfolio-5.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/portfolio/portfolio-5.jpg" alt="meeting" width="630" height="630" aria-hidden="true">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content reversed">
+                {# <span class="cs-topper">About Us</span> #}
+                <h2 class="cs-title">Project #2</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra vehicula dui sit amet tincidunt. Suspendisse eget iaculis nunc, et ornare elit. Aenean varius, massa sit amet viverra finibus, purus libero pretium enim, non suscipit dui felis ullamcorper dui. Duis mattis mattis dapibus. Proin eu enim risus. Curabitur porta vel arcu non aliquet. Praesent dapibus, dolor vel varius gravida, risus tellus dictum ligula, at sollicitudin nisl ex eu elit. Morbi ligula justo, blandit sit amet varius ut, mattis ac ligula.
+                </p>
+                <h3 class="cs-h3">Services Rendered</h3>
+                <div class="icon-container">
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/002-compliant.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">Compliance</p>
+                    </div>
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/001-energy.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">Energy</p>
+                    </div>
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/003-fire.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">FP</p>
+                    </div>
+                </div>
+                {# <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a> #}
+                {# <ul class="cs-ul">
+                    <li class="cs-item">
+                        <span class="cs-number">150 +</span>
+                        <h3 class="cs-h3">Staff on three continents</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">700 +</span>
+                        <h3 class="cs-h3">Consulting engagements</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">180 +</span>
+                        <h3 class="cs-h3">Learning community members</h3>
+                    </li>
+                </ul> #}
+            </div>
+        </div>
+    </section>
+
+    <section class="sbs">
+        <div class="cs-container reveal fade-in">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <!--Image-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/portfolio/portfolio-6.png">
+                    <source media="(min-width: 601px)" srcset="/assets/images/portfolio/portfolio-6.png">
+                    <img loading="lazy" decoding="async" src="/assets/images/portfolio/portfolio-6.png" alt="meeting" width="630" height="630" aria-hidden="true">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                {# <span class="cs-topper">About Us</span> #}
+                <h2 class="cs-title">Project #3</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra vehicula dui sit amet tincidunt. Suspendisse eget iaculis nunc, et ornare elit. Aenean varius, massa sit amet viverra finibus, purus libero pretium enim, non suscipit dui felis ullamcorper dui. Duis mattis mattis dapibus. Proin eu enim risus. Curabitur porta vel arcu non aliquet. Praesent dapibus, dolor vel varius gravida, risus tellus dictum ligula, at sollicitudin nisl ex eu elit. Morbi ligula justo, blandit sit amet varius ut, mattis ac ligula.
+                </p>
+                <h3 class="cs-h3">Services Rendered</h3>
+                <div class="icon-container">
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/004-air-conditioner.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">HVAC</p>
+                    </div>
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/003-fire.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">FP</p>
+                    </div>
+                    <div>
+                        <picture>
+                            <img
+                            aria-hidden="true"
+                            decoding="async"
+                            src="/assets/svgs/005-electric-panel.svg"
+                            alt="appliance"
+                            width="60"
+                            height="60"/>
+                        </picture>
+                        <p class="caption-text">Electrical</p>
+                    </div>
+                </div>
+                {# <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a> #}
+                {# <ul class="cs-ul">
+                    <li class="cs-item">
+                        <span class="cs-number">150 +</span>
+                        <h3 class="cs-h3">Staff on three continents</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">700 +</span>
+                        <h3 class="cs-h3">Consulting engagements</h3>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">180 +</span>
+                        <h3 class="cs-h3">Learning community members</h3>
+                    </li>
+                </ul> #}
+            </div>
         </div>
     </section>
 

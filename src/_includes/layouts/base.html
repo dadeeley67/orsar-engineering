@@ -12,19 +12,28 @@
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
         <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}" />
-        <meta property="og:description" content="{{ description }}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}" />
-        <meta property="og:image" content="/assets/images/logo-small.png" />
-        <meta property="og:image:secure_url" content="/assets/images/logo-small.png" />
+        <meta property="og:title" content="{{ title }}"/>
+        <meta property="og:description" content="{{ description }}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
+        <meta property="og:image" content="/assets/images/logo-small.png"/>
+        <meta property="og:image:secure_url" content="/assets/images/logo-small.png"/>
 
         <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        {# <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
         <link rel="manifest" href="/assets/favicons/site.webmanifest">
         <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff"> #}
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
         <!-- Preloads -->
@@ -34,7 +43,7 @@
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
         {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}" />
+            <link rel="preload" as="image" href="{{ preloadImg }}"/>
         {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->

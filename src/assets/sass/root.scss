@@ -1255,7 +1255,7 @@
             .logo {
                 text-align: center;
                 width: auto;
-                height: calc(32 / 16 * 1em);
+                height: calc(32 / 16 * 3em);
                 margin: auto;
                 margin-bottom: calc(30 / 16 * 1em);
                 display: inline-block;
@@ -1297,7 +1297,7 @@
                     margin-bottom: 0;
                     padding: 0;
 
-                    &:nth-of-type(3) {
+                    &:nth-of-type(2) {
                         margin-top: calc(50 / 16 * 1rem);
 
                         li {
@@ -1374,7 +1374,7 @@
             text-align: center;
             width: 96%;
             margin: auto;
-            margin-top: calc(100 / 16 * 1rem);
+            margin-top: calc(100 / 20 * 1rem);
             color: #fff;
 
             a {
@@ -1431,7 +1431,7 @@
 
             .logo {
                 text-align: left;
-                height: calc(40 / 16 * 1rem);
+                // height: calc(40 / 16 * 2rem);
                 margin-left: 0;
             }
 
@@ -1453,7 +1453,7 @@
                 margin: 0;
 
                 ul {
-                    &:nth-of-type(3) {
+                    &:nth-of-type(2) {
                         margin-top: 0;
 
                         li:first-of-type {
@@ -1514,6 +1514,12 @@
 
         #footer {
             background: #061623;
+
+            .left-section {
+                .logo {
+                    filter: grayscale(1) brightness(1000%);
+                }
+            }
 
             // .right-section {
             //     .lists {
