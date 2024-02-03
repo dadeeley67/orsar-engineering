@@ -25,6 +25,14 @@
             gap: clamp(3rem, 4vw, 4rem);
         }
 
+        .cs-title {
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .cs-h3 {
+            margin: 0 auto 1rem;
+        }
+
         .cs-container.reveal {
             position: relative;
             opacity: 0;
@@ -55,7 +63,6 @@
                 display: flex;
                 justify-content: space-evenly;
                 width: 100%;
-                border-top: 2px solid var(--primary);
 
                 picture {
                     width: 4em;
@@ -153,15 +160,15 @@
             margin: 0 0 calc(8 / 16 * 1rem) 0;
         }
 
-        .cs-h3 {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.5em;
-            font-weight: 400;
-            text-align: left;
-            /* auto margin top will push text to bottom if there's only one line */
-            margin: 0;
-            color: var(--bodyTextColor);
-        }
+        // .cs-h3 {
+        //     font-size: calc(16 / 16 * 1rem);
+        //     line-height: 1.5em;
+        //     font-weight: 400;
+        //     text-align: left;
+        //     /* auto margin top will push text to bottom if there's only one line */
+        //     margin: 0;
+        //     color: var(--bodyTextColor);
+        // }
 
         .cs-image-group {
             width: 100%;
@@ -185,8 +192,8 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
-                border-radius: calc(24 / 16 * 1em);
+                object-fit: contain;
+                border-radius: 1em;
             }
         }
 
@@ -251,7 +258,7 @@
 
         .cs-content {
             width: 48%;
-            padding: calc(48 / 16 * 1rem) calc(32 / 16 * 1rem);
+            // padding: calc(48 / 16 * 1rem) calc(32 / 16 * 1rem);
             align-self: center;
             /* prevents flexbox from squishing it */
             flex: none;
@@ -303,11 +310,6 @@
                 color: var(--secondaryLight);
             }
 
-            .cs-text,
-            .cs-h3 {
-                opacity: 0.8;
-            }
-
             .cs-content {
                 .icon-container {
                     picture {
@@ -321,4 +323,224 @@
             }
         }
     }
+}
+
+
+
+
+// test
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-683 {
+        padding: var(--sectionPadding);
+        /* clips the zigzag graphic so it doesn't cause overflow issues */
+        overflow: hidden;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: calc(542 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+
+        .cs-title {
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .cs-h3 {
+            margin: 0 auto 1rem;
+        }
+
+        .cs-image-group {
+            /* everything inside the image group is in ems so the font size will scale them down.  Font size minimum is tied to view width size, and grows until it reaches 75% of the value on em */
+            font-size: min(2.3vw, 0.75em);
+            width: calc(632 / 16 * 1em);
+            height: calc(820 / 16 * 1em);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-picture {
+            width: calc(306 / 16 * 1em);
+            height: calc(360 / 16 * 1em);
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            border-radius: 1em;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-picture1 {
+            top: calc(80 / 16 * 1em);
+            left: 0;
+        }
+
+        .cs-picture2 {
+            top: 0;
+            right: 0;
+        }
+
+        .cs-picture3 {
+            bottom: 4em;
+            left: 20em;
+        }
+
+        .cs-graphic {
+            display: none;
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-683 {
+        .cs-container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cs-container.reversed {
+            flex-direction: row-reverse;
+        }
+
+        .cs-image-group {
+            font-size: min(1.2vw, 1em);
+            flex: none;
+        }
+
+        .cs-graphic {
+            width: calc(983 / 16 * 1em);
+            height: auto;
+            display: block;
+            position: absolute;
+            bottom: calc(165 / 16 * 1em);
+            right: calc(-32 / 16 * 1em);
+            z-index: -1;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-683 {
+            .cs-topper .cs-color {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-item-p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text,
+            .cs-item-p {
+                opacity: 0.8;
+            }
+
+            .cs-icon {
+                filter: brightness(125%);
+            }
+
+            .cs-graphic {
+                opacity: 0.2;
+            }
+        }
+    }
+}
+
+.slider,
+.slider-1 {
+    width: 100%;
+    max-width: 41.875rem;
+    // min-height: 41.875rem;
+    max-height: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* <===  */
+    // border-radius: 15px;
+}
+
+.slide,
+.slide-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide img,
+.slide-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn,
+.btn-1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active,
+.btn-1:active {
+    transform: scale(1.1);
+}
+
+.btn-prev,
+.btn-prev-1 {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next,
+.btn-next-1 {
+    top: 45%;
+    right: 2%;
 }
