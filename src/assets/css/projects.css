@@ -59,7 +59,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   .sbs {
-    padding: clamp(2.75rem, 7.82vw, 3.25rem) 1rem;
+    padding: clamp(0.75rem, 7.82vw, 3.25rem) 1rem;
     overflow: hidden;
   }
   .sbs .cs-container {
@@ -280,7 +280,7 @@
   .sbs .cs-image-group {
     width: 55%;
     max-width: 41.875rem;
-    min-height: 41.875rem;
+    min-height: 29.375rem;
     max-height: 100%;
     height: auto;
     margin: 0;

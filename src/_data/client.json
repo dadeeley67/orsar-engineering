@@ -1,15 +1,7 @@
 {
     "name": "Orsar Consulting Engineers PLLC",
-    "email": "info@orsarengineering.com",
+    "email": "liad@orsarengineering.com",
     "phoneForTel": "513-888-7011",
     "phoneFormatted": "(513) 888-7011",
-    "address": {
-        "lineOne": "980 Broadway Suite 134",
-        "lineTwo": "Thornwood, NY, 10584",
-        "city": "",
-        "state": "",
-        "zip": "",
-        "mapLink": "https://maps.app.goo.gl/VbeSFKyZfWqtjFZP8"
-    },
     "domain": "https://www.orsarengineering.com"
 }
