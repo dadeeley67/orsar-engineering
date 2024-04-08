@@ -61,15 +61,6 @@ eleventyNavigation:
         <h2>Our Services</h2>
         <div class="services-cards">
             <div class="card">
-                <picture>
-                    <img
-                    aria-hidden="true"
-                    decoding="async"
-                    src="/assets/svgs/service1.svg"
-                    alt="appliance"
-                    width="48"
-                    height="48"/>
-                </picture>
                 <ul class="cs-ul">
                     <li class="cs-li">Heating, Ventilation, and Air Conditioning (HVAC) system design</li>
                     <li class="cs-li">Electrical system design and analysis</li>
@@ -77,15 +68,6 @@ eleventyNavigation:
                 </ul>
             </div>
             <div class="card">
-                <picture>
-                    <img
-                    aria-hidden="true"
-                    decoding="async"
-                    src="/assets/svgs/service3.svg"
-                    alt="appliance"
-                    width="48"
-                    height="48"/>
-                </picture>
                 <ul class="cs-ul">
                     <li class="cs-li">NYC MEP Special and progress inspections</li>
                     <li class="cs-li">Commissioning and retro-commissioning</li>
@@ -104,16 +86,28 @@ eleventyNavigation:
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/photo1.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/photo1.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/photo1.jpg" alt="construction" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/photo2.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/photo2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/photo2.jpg" alt="crane" loading="lazy" width="400" height="563">
-                </picture>
+                <div class="photo-grid">
+                    <picture class="">
+                        <source media="(max-width: 600px)" srcset="/assets/images/photo1.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/photo1.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/photo1.jpg" alt="construction" loading="lazy" width="400" height="563">
+                    </picture>
+                    <picture class="">
+                        <source media="(max-width: 600px)" srcset="/assets/images/photo2.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/photo2.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/photo2.jpg" alt="crane" loading="lazy" width="400" height="563">
+                    </picture>
+                    <picture class="">
+                        <source media="(max-width: 600px)" srcset="/assets/images/photo3.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/photo3.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/photo3.jpg" alt="construction" loading="lazy" width="400" height="563">
+                    </picture>
+                    <picture class="">
+                        <source media="(max-width: 600px)" srcset="/assets/images/photo4.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/photo4.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/photo4.jpg" alt="crane" loading="lazy" width="400" height="563">
+                    </picture>
+                </div>
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
@@ -143,15 +137,16 @@ eleventyNavigation:
                 <!-- Row 1-->
                 <div class="cs-row cs-row-1">
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/photo6.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/photo6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/photo6.jpg" alt="new hallway" loading="lazy" width="400" height="560">
+
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/SkyView.png">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/SkyView.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/SkyView.png" alt="apartment addition" loading="lazy" width="400" height="560">
                     </picture>
                     <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/photo8.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/photo8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/photo8.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/portfolio-6.png">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/portfolio-6.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/portfolio-6.png" alt="building a new wall" loading="lazy" width="400" height="560">
                     </picture>
                 </div>
                 <!-- Row 2 -->
@@ -176,10 +171,10 @@ eleventyNavigation:
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/photo7.jpg">
                         <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/photo7.jpg" alt="new home construction" loading="lazy" width="400" height="560">
                     </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/SkyView.png">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/SkyView.png">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/SkyView.png" alt="apartment addition" loading="lazy" width="400" height="560">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/photo6.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/photo6.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/photo6.jpg" alt="new hallway" loading="lazy" width="400" height="560">
                     </picture>
                 </div>
             </div>
